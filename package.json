@@ -1,0 +1,25 @@
+{
+  "name": "easysnap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon --ext js,graphql app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.16.1",
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.3.0",
+    "graphql-import": "^1.0.2",
+    "mongoose": "^5.9.26"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
