@@ -13,6 +13,7 @@ type Snap {
 
 type Mutation {
     createSnap(data:CreateSnapInput): Snap
+    deleteSnap(id:ID) : Snap
 }
 
 input CreateSnapInput {
