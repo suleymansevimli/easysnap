@@ -8,6 +8,7 @@ type Snap {
     text : String!
     createdAt : String!
     user : User!
+    snapCategory : SnapCategory
 }
 
 type Mutation {
@@ -17,4 +18,5 @@ type Mutation {
 input CreateSnapInput {
     text: String!
     user_id : ID!
+    category_id : ID!
 }

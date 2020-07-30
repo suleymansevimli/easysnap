@@ -1,0 +1,18 @@
+type Query {
+    snapCategory(id:ID!) : SnapCategory!
+    snapCategories : [SnapCategory!]!
+}
+
+type SnapCategory {
+    id : ID!
+    name : String!,
+    createdAt : String!
+}
+
+type Mutation {
+    createCategory(data:CreateCategoryInput): SnapCategory
+}
+
+input CreateCategoryInput {
+    name : String!
+}

@@ -12,13 +12,15 @@ const resolvers = require('./graphql/resolvers/index');
 // models
 const User = require('./models/User')
 const Snap = require('./models/Snap')
+const SnapCategory = require('./models/SnapCategory')
 
 let server = new ApolloServer({
     typeDefs : importSchema('./graphql/schema.graphql'),
     resolvers : resolvers,
     context : {
         User,
-        Snap
+        Snap,
+        SnapCategory
     }
 })
 

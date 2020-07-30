@@ -13,6 +13,14 @@ const Query = {
 
     snaps : async (parent,args, {Snap}) => {
         return await Snap.find({});
+    },
+
+    snapCategory : async (parent,args, {SnapCategory}) => {
+        return await SnapCategory.findById(args.id)
+    },
+
+    snapCategories : async (parent,args, {SnapCategory}) => {
+        return await SnapCategory.find({});
     }
 }
 
