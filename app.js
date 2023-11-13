@@ -4,8 +4,6 @@ const mongoose = require('mongoose')
 // .env dosyasını kullanabilmek için
 require('dotenv').config();
 
-
-
 const { ApolloServer } = require('apollo-server-express')
 const { importSchema } = require('graphql-import')
 
